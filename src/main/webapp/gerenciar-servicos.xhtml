@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:decorate xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      template="template.xhtml">
+    
+      
+        <h:form>
+            <p:toolbar>
+                <p:toolbarGroup>
+                    <p:commandButton icon="fa fa-fw fa-file" value="Novo"></p:commandButton>
+                    <p:commandButton icon="fa fa-fw fa-save" value="Salvar"></p:commandButton>
+                    <p:commandButton icon="fa fa-fw fa-search" value="Pesquisar"></p:commandButton>
+                </p:toolbarGroup>
+            </p:toolbar>
+            <p:spacer></p:spacer>
+            <p:panelGrid columns="2" styleClass="ui-panelgrid-blank">
+                <h:outputLabel value="Nome"></h:outputLabel>
+                <p:inputText></p:inputText>
+                <h:outputLabel value="Valor"></h:outputLabel>
+                <p:inputText></p:inputText>
+            </p:panelGrid>
+            <p:dataTable>
+                <p:column headerText="Nome"></p:column>
+                <p:column headerText="Valor"></p:column>
+            </p:dataTable>
+        </h:form>
+</ui:decorate>
+
