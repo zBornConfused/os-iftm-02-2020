@@ -8,9 +8,9 @@ import lombok.Setter;
 @Getter @Setter
 public class Cliente implements Serializable {
     
-    private Integer id; //id
-    private String nomeFantasia; //nome_fantasia
-    private String sobrenomeRazao;//sobremenome_razao
+    private Integer id;
+    private String nomeFantasia;
+    private String sobrenomeRazao;
     private Date dataNascimento;
     private Date dataCadastro;
     private String cpfCnpj;

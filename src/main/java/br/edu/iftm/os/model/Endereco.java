@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter @Setter
 public class Endereco implements Serializable{
     
-    private Integer id;
+    private int id;
     private String descricao;
     private String logradouro;
     private String numero;
